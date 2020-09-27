@@ -4,7 +4,7 @@ import { ProblemTitleService } from 'src/app/services/problem-title.service';
 import { SolutionService } from 'src/app/services/solution.service';
 
 @Component({
-  selector: 'solution-card',
+  selector: 'solution-card-component',
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './solution-card.component.html',
   styleUrls: ['./solution-card.component.css']

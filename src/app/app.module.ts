@@ -1,11 +1,11 @@
+import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { MatGridListModule } from '@angular/material/grid-list';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SolutionCardModule } from './components/solution-card-component/solution-card-component.module';
-
+import { HomeComponentModule } from './components/home/home.component.module';
+import { SolutionsComponentModule } from './components/solutions/solutions.component.module';
 
 @NgModule({
   declarations: [
@@ -13,10 +13,11 @@ import { SolutionCardModule } from './components/solution-card-component/solutio
   ],
   imports: [
     AppRoutingModule,
+    CommonModule,
     BrowserModule,
-    MatGridListModule,
+    HomeComponentModule,
     MatToolbarModule,
-    SolutionCardModule
+    SolutionsComponentModule
   ],
   providers: [],
   bootstrap: [AppComponent]

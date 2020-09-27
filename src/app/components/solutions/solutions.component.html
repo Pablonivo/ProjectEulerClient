@@ -1,0 +1,5 @@
+<mat-grid-list [cols]="breakpoint" rowHeight="1:1" (window:resize)="onResize($event)">
+    <mat-grid-tile *ngFor="let id of problemIds">
+        <solution-card-component [problemId]="id"></solution-card-component>
+    </mat-grid-tile>
+</mat-grid-list>
