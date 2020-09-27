@@ -1,0 +1,38 @@
+<mat-card class="solution-card">
+
+    <mat-grid-list [cols]="1" rowHeight="10px">
+        <mat-card-header class="solution-card-header">
+            <mat-grid-tile [rowspan]="4">
+                <mat-card-title>Problem
+                    <a target="_blank" rel="noopener" href="https://projecteuler.net/problem={{problemId}}">
+                        {{problemId}}
+                    </a>
+                </mat-card-title>
+            </mat-grid-tile>
+
+            <mat-grid-tile [rowspan]="4">
+                <mat-card-subtitle>{{problemTitle}}</mat-card-subtitle>
+            </mat-grid-tile>
+        </mat-card-header>
+
+        <mat-grid-tile [rowspan]="4">
+            <mat-card-content>
+                <button mat-raised-button (click)="onCompute()" color="primary"> Compute</button>
+            </mat-card-content>
+        </mat-grid-tile>
+
+        <mat-grid-tile [rowspan]="3">
+            <mat-card-footer>
+                <span class="show-solution-or-spinner">
+                    Solution:
+                    <ng-container *ngIf="!isComputing">
+                        {{solution}}
+                    </ng-container>
+                    <ng-container *ngIf="isComputing">
+                        <mat-progress-spinner [mode]="'indeterminate'" [diameter]="15"></mat-progress-spinner>
+                    </ng-container>
+                </span>
+            </mat-card-footer>
+        </mat-grid-tile>
+    </mat-grid-list>
+</mat-card>
