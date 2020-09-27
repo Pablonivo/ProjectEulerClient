@@ -9,6 +9,7 @@ import { SolutionsComponent } from './solutions.component';
     SolutionsComponent,
   ],
   imports: [
+    CommonModule,
     MatGridListModule,
     SolutionCardModule
   ]
