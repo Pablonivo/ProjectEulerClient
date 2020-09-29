@@ -1,17 +1,17 @@
 <mat-card class="solution-card">
-
     <mat-grid-list [cols]="1" rowHeight="10px">
         <mat-card-header class="solution-card-header">
             <mat-grid-tile [rowspan]="4">
-                <mat-card-title>Problem
-                    <a target="_blank" rel="noopener" href="https://projecteuler.net/problem={{problemId}}">
-                        {{problemId}}
-                    </a>
+                <mat-card-title>Problem {{problemId}}
                 </mat-card-title>
             </mat-grid-tile>
 
             <mat-grid-tile [rowspan]="4">
-                <mat-card-subtitle>{{problemTitle}}</mat-card-subtitle>
+                <mat-card-subtitle>
+                    <a target="_blank" rel="noopener" href="https://projecteuler.net/problem={{problemId}}">
+                        {{problemTitle}}
+                    </a>
+                </mat-card-subtitle>
             </mat-grid-tile>
         </mat-card-header>
 

@@ -1,3 +1,9 @@
+<h1 style="color: white; text-align: center;padding-top:28px;">Project Euler solutions</h1>
+
+<div style="display: flex;justify-content: center;align-content: center;">
+    <img class="rabbit-image" src="assets/smart_rabbit.jpg" width="240" height="240" style="padding-top: 14px;">
+</div>
+
 <mat-grid-list [cols]="breakpoint" rowHeight="1:1" (window:resize)="onResize($event)">
     <mat-grid-tile *ngFor="let id of problemIds">
         <solution-card-component [problemId]="id"></solution-card-component>
