@@ -4,8 +4,12 @@
     <img class="rabbit-image" src="assets/smart_rabbit.jpg" width="240" height="240" style="padding-top: 14px;">
 </div>
 
+<span class="compute-all-button">
+    <button mat-raised-button (click)="computeAll()" color="primary"> Compute all</button>
+</span>
+
 <mat-grid-list [cols]="breakpoint" rowHeight="1:1" (window:resize)="onResize($event)">
     <mat-grid-tile *ngFor="let id of problemIds">
-        <solution-card-component [problemId]="id"></solution-card-component>
+        <solution-card-component #solutioncard [problemId]="id"></solution-card-component>
     </mat-grid-tile>
 </mat-grid-list>
