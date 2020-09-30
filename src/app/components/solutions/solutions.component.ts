@@ -27,7 +27,7 @@ export class SolutionsComponent implements OnInit{
     }
 
     private _numberOfColumnsThatCanBeShown(windowWidth: number): number {
-        const widthRequiredForColumn = 200;
+        const widthRequiredForColumn = 150;
         return Math.floor(windowWidth / widthRequiredForColumn)
     }
 }

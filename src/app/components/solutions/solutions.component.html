@@ -1,4 +1,4 @@
-<h1 style="color: white; text-align: center;padding-top:28px;">Project Euler solutions</h1>
+<h1 class="solutions-component-title">Project Euler solutions</h1>
 
 <div style="display: flex;justify-content: center;align-content: center;">
     <img class="rabbit-image" src="assets/smart_rabbit.jpg" width="240" height="240" style="padding-top: 14px;">
@@ -8,7 +8,7 @@
     <button mat-raised-button (click)="computeAll()" color="primary"> Compute all</button>
 </span>
 
-<mat-grid-list [cols]="breakpoint" rowHeight="1:1" (window:resize)="onResize($event)">
+<mat-grid-list [cols]="breakpoint" rowHeight="1.5:2" (window:resize)="onResize($event)">
     <mat-grid-tile *ngFor="let id of problemIds">
         <solution-card-component #solutioncard [problemId]="id"></solution-card-component>
     </mat-grid-tile>

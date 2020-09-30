@@ -4,3 +4,9 @@
     padding-top: 20px;
     padding-bottom: 20px;
 }
+
+.solutions-component-title {
+    color: white; 
+    text-align: center;
+    padding-top:28px;
+}
