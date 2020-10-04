@@ -10,6 +10,7 @@
 }
 
 .show-solution-or-spinner {
+  font-size: smaller;
   display: flex;
   align-items: center;
   justify-content: center;
