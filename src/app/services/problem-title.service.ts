@@ -29,6 +29,8 @@ export class ProblemTitleService {
                 return 'Special Pythagorean triplet';
             case 10:
                 return 'Summation of primes';
+            case 11:
+                return 'Largest product in a grid';
             default:
                 return 'Not yet implemented'
         }
