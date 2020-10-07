@@ -31,6 +31,16 @@ export class ProblemTitleService {
                 return 'Summation of primes';
             case 11:
                 return 'Largest product in a grid';
+            case 12:
+                return 'Highly divisible triangular number';
+            case 13:
+                return 'Large sum';
+            case 14:
+                return 'Longest Collatz sequence';
+            case 15:
+                return 'Lattice paths';
+            case 16:
+                return 'Power digit sum';
             default:
                 return 'Not yet implemented'
         }

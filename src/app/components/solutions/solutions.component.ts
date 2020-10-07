@@ -7,7 +7,7 @@ import { SolutionCardComponent } from '../solution-card/solution-card.component'
     styleUrls: ['./solutions.component.css']
 })
 export class SolutionsComponent implements OnInit{
-    private readonly NUMBER_OF_PROBLEMS_WHICH_ARE_SOLVED = 11;
+    private readonly NUMBER_OF_PROBLEMS_WHICH_ARE_SOLVED = 16;
 
     problemIds: number[] = Array.from({ length: this.NUMBER_OF_PROBLEMS_WHICH_ARE_SOLVED }, (_, i) => i + 1)
     breakpoint: number;
