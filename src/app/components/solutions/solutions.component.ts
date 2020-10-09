@@ -7,9 +7,10 @@ import { SolutionCardComponent } from '../solution-card/solution-card.component'
     styleUrls: ['./solutions.component.css']
 })
 export class SolutionsComponent implements OnInit{
-    private readonly NUMBER_OF_PROBLEMS_WHICH_ARE_SOLVED = 16;
+    private readonly NUMBER_OF_CONSECUTIVE_PROBLEMS_WHICH_ARE_SOLVED = 18;
+    private readonly otherProblemIdsSolved = [67]
 
-    problemIds: number[] = Array.from({ length: this.NUMBER_OF_PROBLEMS_WHICH_ARE_SOLVED }, (_, i) => i + 1)
+    problemIds: number[] = Array.from({ length: this.NUMBER_OF_CONSECUTIVE_PROBLEMS_WHICH_ARE_SOLVED }, (_, i) => i + 1).concat(this.otherProblemIdsSolved);
     breakpoint: number;
 
     @ViewChildren('solutioncard') components:QueryList<SolutionCardComponent>;

@@ -41,6 +41,12 @@ export class ProblemTitleService {
                 return 'Lattice paths';
             case 16:
                 return 'Power digit sum';
+            case 17:
+                return 'Number letter counts';
+            case 18:
+                return 'Maximum path sum I';
+            case 67:
+                return 'Maximum path sum II';
             default:
                 return 'Not yet implemented'
         }
