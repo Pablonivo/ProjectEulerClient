@@ -45,6 +45,10 @@ export class ProblemTitleService {
                 return 'Number letter counts';
             case 18:
                 return 'Maximum path sum I';
+            case 19:
+                return 'Counting Sundays';
+            case 20:
+                return 'Factorial digit sum';
             case 67:
                 return 'Maximum path sum II';
             default:

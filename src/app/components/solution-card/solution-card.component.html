@@ -34,5 +34,11 @@
                 </span>
             </mat-card-footer>
         </mat-grid-tile>
+
+        <mat-grid-tile [rowspan]="2">
+            <span *ngIf="solution" class="computed-in-amount-of-seconds-text">
+                (Computed in {{_numberOfSecondsUsedForLastComputation}} seconds)
+            </span>
+        </mat-grid-tile>
     </mat-grid-list>
 </mat-card>
