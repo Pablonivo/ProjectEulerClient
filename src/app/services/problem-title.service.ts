@@ -49,6 +49,32 @@ export class ProblemTitleService {
                 return 'Counting Sundays';
             case 20:
                 return 'Factorial digit sum';
+            case 21:
+                return 'Amicable numbers';
+            case 22:
+                return 'Names scores';
+            case 23:
+                return 'Non-abundant sums';
+            case 24:
+                return 'Lexicographic permutations';
+            case 25:
+                return '1000-digit Fibonacci number';
+            case 26:
+                return 'Reciprocal cycles';
+            case 27:
+                return 'Quadratic primes';
+            case 28:
+                return 'Number spiral diagonals';
+            case 29:
+                return 'Distinct powers';
+            case 30:
+                return 'Digit fifth powers';
+            case 31:
+                return 'Coin sums';
+            case 32:
+                return 'Pandigital products';
+            case 33:
+                return 'Digit cancelling fractions';
             case 67:
                 return 'Maximum path sum II';
             default:

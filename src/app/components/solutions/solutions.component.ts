@@ -7,7 +7,7 @@ import { SolutionCardComponent } from '../solution-card/solution-card.component'
     styleUrls: ['./solutions.component.css']
 })
 export class SolutionsComponent implements OnInit{
-    private readonly NUMBER_OF_CONSECUTIVE_PROBLEMS_WHICH_ARE_SOLVED = 20;
+    private readonly NUMBER_OF_CONSECUTIVE_PROBLEMS_WHICH_ARE_SOLVED = 33;
     private readonly otherProblemIdsSolved = [67]
 
     problemIds: number[] = Array.from({ length: this.NUMBER_OF_CONSECUTIVE_PROBLEMS_WHICH_ARE_SOLVED }, (_, i) => i + 1).concat(this.otherProblemIdsSolved);
