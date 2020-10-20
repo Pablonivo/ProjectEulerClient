@@ -1,14 +1,14 @@
 <mat-card class="solution-card">
-    <mat-grid-list [cols]="1" rowHeight="10px">
+    <mat-grid-list [cols]="1" rowHeight="9px">
         <mat-card-header class="solution-card-header">
             <mat-grid-tile [rowspan]="3">
                 <mat-card-title>Problem {{problemId}}
                 </mat-card-title>
             </mat-grid-tile>
 
-            <mat-grid-tile [rowspan]="5">
+            <mat-grid-tile [rowspan]="7">
                 <mat-card-subtitle>
-                    <a target="_blank" rel="noopener" href="https://projecteuler.net/problem={{problemId}}">
+                    <a class="problem-title" target="_blank" rel="noopener" href="https://projecteuler.net/problem={{problemId}}">
                         {{problemTitle}}
                     </a>
                 </mat-card-subtitle>
@@ -35,7 +35,7 @@
             </mat-card-footer>
         </mat-grid-tile>
 
-        <mat-grid-tile [rowspan]="2">
+        <mat-grid-tile [rowspan]="1">
             <span *ngIf="solution" class="computed-in-amount-of-seconds-text">
                 (Computed in {{_numberOfSecondsUsedForLastComputation}} seconds)
             </span>

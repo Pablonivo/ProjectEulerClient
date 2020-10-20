@@ -75,6 +75,30 @@ export class ProblemTitleService {
                 return 'Pandigital products';
             case 33:
                 return 'Digit cancelling fractions';
+            case 34:
+                return 'Digit factorials';
+            case 35:
+                return 'Circular primes';
+            case 36:
+                return 'Double-base palindromes';
+            case 37:
+                return 'Truncatable primes';
+            case 38:
+                return 'Pandigital multiples';
+            case 39:
+                return 'Integer right triangles';
+            case 40:
+                return 'Champernowne\'s constant';
+            case 41:
+                return 'Pandigital prime';
+            case 42:
+                return 'Coded triangle numbers';
+            case 43:
+                return 'Sub-string divisibility';
+            case 44: 
+                return 'Pentagon numbers';
+            case 45:
+                return 'Triangular, pentagonal, and hexagonal';
             case 67:
                 return 'Maximum path sum II';
             default:
